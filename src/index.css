@@ -8,10 +8,9 @@ body {
   --elements-color: white;
   margin: 0;
   font-family: Nunito, sans-serif;
-
 }
 
-main , header{
+main, header {
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -21,7 +20,6 @@ main.dark, header.dark {
   --text-color: white;
   --elements-color: hsl(209, 23%, 22%);
 }
-
 
 main {
   padding: 24px;
@@ -60,12 +58,11 @@ a {
 
 .countries-container {
   max-width: 1200px;
-  margin-top: 16px;
-  display: flex;
-  gap: 64px;
-  flex-wrap: wrap;
-  margin-inline: auto;
-  justify-content: space-between;
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 32px;
+    margin-inline: auto;
 }
 
 .country-card {
@@ -99,9 +96,6 @@ a {
 
 .country-card img {
   width: 100%;
-  height: 50%;
-  object-fit: cover;
-  
 }
 
 

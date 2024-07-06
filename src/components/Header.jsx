@@ -1,11 +1,13 @@
 import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ThemeContext } from '../contexts/ThemeContext'
+import { useTheme } from '../hooks/useTheme'
 
 function Header({ theme }) {
   // console.log(theme)
   // const [isDark, setIsDark] = theme
-  const [isDark, setIsDark] = useContext(ThemeContext)
+  // const [isDark, setIsDark] = useContext(ThemeContext)
+  const [isDark, setIsDark] = useTheme()
 
   // if (isDark) {
   //   document.body.classList.add('dark')
